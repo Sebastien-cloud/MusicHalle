@@ -8,22 +8,26 @@
     <script src="script.js" defer></script>
     <title>MusicHalle</title>
 </head>
-<header> <!--header-->
+<header class="header"> <!--header-->
     <div>
-        <div> <!--logo + nom site "MusicHalle"-->
-            <img src="" alt="">
-        </div>
-
+        <h2 class="textCenter">MusicHalle</h2>
         <div>
-            <nav>
-                <a href="">Nos produits</a>
-                <a href="">Nos services</a>
-                <a href="">Témoignages</a>
-            </nav>
-        </div>
+            
+            <div> <!--logo + nom site "MusicHalle"-->
+                <img src="assets/logo-instrument-2.png" class="headerImage" alt="">
+            </div>
 
-        <div>
-            <img src="" alt=""> <!--icone contact reseaux sociaux (pareil dans le footer)-->
+            <div>
+                <nav class="flex spaceBetween">
+                    <a href="">Nos produits</a>
+                    <a href="">Nos services</a>
+                    <a href="">Témoignages</a>
+                </nav>
+            </div>
+
+            <div>
+                <img src="" alt=""> <!--icone contact reseaux sociaux (pareil dans le footer)-->
+            </div>
         </div>
 
     </div>
@@ -31,36 +35,44 @@
 
 <body>
     <section> <!--debut phrase d'accroche CTA Promesses-->
-        <div>
-            <p>Explorez la diversité musicale avec MusicHalle, votre boutique d'instruments du monde à Paris</p>
-            <!--accroche-->
-            <a href="">En savoir plus</a> <!--call to action (CTA) bouton-->
+        <div class="container spaceBetween">
+            <div class="flex textCenter">
+                <div class="widthP">
+                    <h1>Explorez la diversité musicale avec MusicHalle, votre boutique d'instruments du monde à Paris</h1>
+                    <!--accroche-->
+                    <a href="" class="btn">En savoir plus</a> <!--call to action (CTA) bouton-->
+                </div>
+                <div>
+                    <h3>Nos Promesses--</h3>
+                    <p>Sélection éclectique d'instruments du monde</p>
+                    <p>Conseils personnalisés de nos experts passionnés</p>
+                    <p>Ambiance accueillante pour une expérience de shopping authentique</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>Nos Promesses--</h3>
-            <p>Sélection éclectique d'instruments du monde</p>
-            <p>Conseils personnalisés de nos experts passionnés</p>
-            <p>Ambiance accueillante pour une expérience de shopping authentique</p>
-        </div>
+
     </section> <!--fin section accroche CTA Promesses-->
 
     <section> <!--debut section produits-->
 
         <h3>Nos produits</h3>
-        <div> <!--parent des div en dessous-->
+        <div class="container flex alignCenter spaceBetween"> <!--parent des div en dessous-->
             <div> <!--instrument Hang-->
                 <a href="">
-                    <img src="assets/hang.webp" alt="instrument de musique hang">
-                    <p></p>
-                    <p></p>
+                    <img src="assets/hang.webp" class="tailleImg" alt="instrument de musique hang">
+                    <p>Hang:</p>
+                    <p class="widthP">Découvrez les sonorités apaisantes du hang, un instrument mélodique captivant.
+                        Parfait pour créer une atmosphère paisible et méditative.</p>
                 </a>
             </div>
 
             <div> <!--instrument Kora-->
                 <a href="">
-                    <img src="" alt="">
-                    <p></p>
-                    <p></p>
+                    <img src="assets/hang.webp" class="tailleImg" alt="instrument de musique hang">
+                    <p>Hang:</p>
+                    <p class="widthP">Découvrez les sonorités apaisantes du hang, un instrument mélodique captivant.
+                        Parfait pour créer une atmosphère paisible et méditative.</p>
+                </a>
                 </a>
             </div>
 
@@ -99,30 +111,30 @@
 
     </section> <!--fin section produits-->
 
-    <section> <!--section services-->
+    <section class="container"> <!--section services-->
         <h3>Nos services</h3>
-        <div>
+        <div class="flex">
             <div> <!--div ateliers musicaux-->
                 <h4>Ateliers musicaux</h4>
-                <p></p>
+                <p>Participez à nos ateliers musicaux pour explorer et apprendre à jouer des instruments du monde. Rencontrez des artistes locaux et partagez votre passion pour la musique.</p>
             </div>
 
             <div> <!--div conseils personnalisés-->
                 <h4>Ateliers musicaux</h4>
-                <p></p>
+                    <p>Participez à nos ateliers musicaux pour explorer et apprendre à jouer des instruments du monde. Rencontrez des artistes locaux et partagez votre passion pour la musique.</p>
             </div>
 
             <div> <!--div reparations d'instruments-->
                 <h4>Ateliers musicaux</h4>
-                <p></p>
+                    <p>Participez à nos ateliers musicaux pour explorer et apprendre à jouer des instruments du monde. Rencontrez des artistes locaux et partagez votre passion pour la musique.</p>
             </div>
         </div>
 
     </section> <!--fin section services-->
 
-    <section> <!--debut section temoignages-->
+    <section class="container"> <!--debut section temoignages-->
         <h3>Témoignages</h3>
-        <div>
+        <div class="flex">
             <div> <!--temoignage Amira-->
                 <p>Nom: Amira</p>
                 <p>Prestation: Achat d'une Kora</p>
@@ -140,10 +152,10 @@
             </div>
 
             <div> Yasmine
-                <p>Nom:</p>
-                <p>Prestation:</p>
-                <p>Commentaire:</p>
-                <p>Note:</p>
+                <p>Prestation: Achat d'une Kora</p>
+                <p>Commentaire: J'ai découvert une superbe kora chez MusicHalle. Le personnel m'a guidé avec passion, et
+                    maintenant je peux explorer les magnifiques sonorités de la musique africaine chez moi. Merci !</p>
+                <p>Note: </p>
             </div>
         </div>
     </section> <!--fin section temoignages-->
