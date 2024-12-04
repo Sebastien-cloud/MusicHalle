@@ -1,0 +1,18 @@
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spaceBetween{
+    justify-content: space-between;
+}
