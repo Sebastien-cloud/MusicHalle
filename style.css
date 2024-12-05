@@ -1,8 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+h1{
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .nomSite{
+    color: white;
+    font-family: "Open Sans", sans-serif;
+  font-weight: weight;
+  font-style: normal;
+  }
+  html{
+    font-family: "Open Sans", sans-serif;
+  font-weight: weight;
+  font-style: normal;
+  }
 
 a{
     text-decoration: none;
@@ -14,16 +36,29 @@ a{
 }
 
 .container{
-    max-width: 70%;
+    /*background-color: red*/
+    max-width: 1000px;
+    margin: auto;
+    width: 100%;
+}
+
+.containerAccroche{
+    /*background-color: red*/
+    margin: auto;
+    width: 100%;
+}
+
+.bgYellow{
+    background-color: #f1d02c;
 }
 
 .spaceBetween{
     justify-content: space-between;
 }
 
-/*.gap{
-    gap: 10px;
-} */
+.gap{
+    gap: 20px;
+}
 
 .alignCenter {
     align-items: center;
@@ -34,8 +69,8 @@ a{
 }
 
 .header{
-    padding: 0px 10px;
-    background-color: #b5521c;
+    /*padding: 0px 16px;*/
+    background-color: #f7d917;
     /*position: fixed;*/
     top: 0;
     left: 0;
@@ -48,21 +83,30 @@ a{
 .headerImage{
     width: 100px;
     height: 100px;
-}
-
-.marge{
-    margin-bottom: 12px;
-    padding: 12px;
-}
-
-.tailleImg{
-    width: 40%;
-    height: 40%;
     object-fit: contain;
 }
 
+/*.marge{
+    margin-bottom: 12px;
+    padding: 12px;
+}*/
+
+.tailleImg{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.widthPromesses{
+    width: 40%;
+}
+
 .widthP{
-    width: 35%;
+    width: 80%;
+}
+
+.titreGras{
+    font-weight: 400;
 }
 
 .btn {
@@ -71,4 +115,12 @@ a{
     border-radius: 6px;
     color: white;
     text-decoration: none;
+}
+
+/*footer*/
+footer img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    align-items: center;
 }
