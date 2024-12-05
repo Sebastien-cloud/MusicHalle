@@ -25,7 +25,17 @@ function afficherLesInstruments(i) {
     document.querySelector("#Instruments").innerHTML += template
 }
 
-function afficherTemoignages(t) {
+fetch("data.json.json")
+    .then(rep => {
+        return rep.json()
+    })
+.then(donnee => {
+    console.log(donnee)
+    donnee.temoignages.forEach(client => {
+        afficherTemoignages(client)
+    });
+
+    function afficherTemoignages(t) {
     //parametre: un prenom
     // role: afficher le prenom d'une personne qui a temoigne dans la page html qui a l'id Temoignages
     //retour: aucun
@@ -38,4 +48,4 @@ function afficherTemoignages(t) {
 
     document.querySelector("#Temoignages").innerHTML += template
 }
-
+})
