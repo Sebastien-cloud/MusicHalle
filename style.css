@@ -30,9 +30,28 @@ a{
     text-decoration: none;
 }
 
+.cardInstru{
+    width: 30%;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+h5 .cardInstru{
+    font-weight: 400;
+}
+
+.cardTemoignages{
+    margin-top: 14px;
+    margin-bottom: 14px;
+    width: 30%;
+    padding:10px;
+    /*display: flex;
+    flex-wrap: wrap;*/
+}
+
 .flex{
     display: flex;
-   /* flex-wrap: wrap;*/
+   flex-wrap: wrap;
 }
 
 .container{
@@ -40,6 +59,10 @@ a{
     max-width: 1000px;
     margin: auto;
     width: 100%;
+}
+
+.containerService{
+    width: 45%;
 }
 
 .containerAccroche{
